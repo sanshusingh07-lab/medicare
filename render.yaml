@@ -2,6 +2,7 @@ services:
   - type: web
     name: medicare-web
     runtime: python
+    plan: free
     buildCommand: pip install -r requirements.txt
     startCommand: flask --app app.py init-db && gunicorn app:app
     envVars:
