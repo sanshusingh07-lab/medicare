@@ -1,0 +1,38 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python byte-code and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment variables & secrets (never commit to git)
+.env
+.env.local
+.env.*.local
+
+# Instance & SQLite databases
+instance/
+*.db
+*.sqlite3
+
+# Uploaded files (preserve folder structure via .gitkeep)
+uploads/reports/*
+!uploads/reports/.gitkeep
+uploads/prescriptions/*
+!uploads/prescriptions/.gitkeep
+uploads/profiles/*
+!uploads/profiles/.gitkeep
+
+# IDE and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
